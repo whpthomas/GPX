@@ -52,9 +52,9 @@ static int sio_port = -1;
 static void exit_handler(void)
 {
     // close open files
-    if(file_in != stdin) {
+    if(file_in != stdin && file_in != NULL) {
         fclose(file_in);
-        if(file_out != stdout) {
+        if(file_out != stdout && file_out != NULL) {
             if(ferror(file_out)) {
                 perror("Error writing to output file");
             }
