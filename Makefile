@@ -57,5 +57,5 @@ release: gpx
 
 # Run unit test
 test: gpx
-	./gpx lint.gcode
-	python ./s3g-decompiler.py lint.x3g
+	./gpx examples/lint.gcode
+	python scripts/s3g-decompiler.py examples/lint.x3g
