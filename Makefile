@@ -1,7 +1,7 @@
 # Declaration of variables
 CC = cc
-CC_FLAGS = -w
-L_FLAGS = -lm
+CFLAGS = -w
+LIBS = -lm
 
 # File names
 VERSION = 2.0
@@ -17,11 +17,11 @@ all: gpx
 
 # Main target
 gpx: $(OBJECTS)
-	$(CC) $(L_FLAGS) $(OBJECTS) -o gpx
+	$(CC) $(LDFLAGS) $(OBJECTS) $(LIBS) -o gpx
 
 # To obtain object files
 %.o: %.c
-	$(CC) -c $(CC_FLAGS) $< -o $@
+	$(CC) -c $(CFLAGS) $< -o $@
 
 # To remove generated files
 clean:
