@@ -1,3 +1,5 @@
+This project is now maintained at https://github.com/markwal/GPX
+
 GPX was created by Dr. Henry Thomas (aka Wingcommander) in April 2013
 
 GPX is a post processing utility for converting gcode output from 3D slicing software like
