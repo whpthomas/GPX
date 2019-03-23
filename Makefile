@@ -17,7 +17,7 @@ all: gpx
 
 # Main target
 gpx: $(OBJECTS)
-	$(CC) $(L_FLAGS) $(OBJECTS) -o gpx
+	$(CC) $(OBJECTS) -o gpx $(L_FLAGS)
 
 # To obtain object files
 %.o: %.c
