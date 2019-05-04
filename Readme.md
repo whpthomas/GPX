@@ -20,7 +20,7 @@ Options:
 	-p	override build percentage
 	-r	Reprap GCODE flavor
 	-s	enable USB serial I/O and send x3G output to 3D printer
-	-v	verose mode
+	-v	verbose mode
 	-w	rewrite 5d extrusion values
 
 B is baudrate for serial I/O (default is 115200)
